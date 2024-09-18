@@ -1,0 +1,28 @@
+﻿Duplicate-Data-Alert-Service (C#/.NET)
+Duplicate-Data-Alert-Service is a C#/.NET console application designed to detect duplicate records in a SQL Server database and send email notifications about them. This service automates the process of identifying duplicate data entries and notifying the relevant recipients, helping to maintain data integrity and alert teams about potential issues.
+
+Features:
+Scans the database for duplicate records based on predefined criteria.
+Sends email notifications using an SMTP server, including details about the duplicate records found.
+Logs email notifications and status to a database for audit purposes.
+Customizable email content and recipient mapping for different stations.
+Supports SSL/TLS for secure email transmission (with an option to skip SSL validation for testing).
+Technologies Used:
+C#/.NET for the main application logic.
+SQL Server for data storage and querying duplicate records.
+SMTP for sending email alerts.
+Windows Console Application for lightweight and easy-to-deploy operations.
+How It Works:
+The application connects to a SQL Server database and checks for records that match a certain "duplicate" condition.
+For each duplicate record found, it generates an email containing the details and sends it to the appropriate recipients.
+Logs the email status in a separate table for tracking.
+Keywords:
+duplicate-data
+data-notification
+email-alerts
+SQL-server
+C#
+SMTP-email
+data-checker
+notification-service
+.NET
